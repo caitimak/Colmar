@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+section {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+h4 {
+  text-transform: uppercase;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+#button {
+  display: block;
+  width: 100%;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  height: 2rem;
+  padding: .5rem;
+
+}
+
+/*navigation*/
+
+nav {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.links span {
+  padding-right: 1rem;
+  color: gray;
+}
+
+
+/*banner*/
+
+.banner {
+  background-color: gray;
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.banner .image-container {
+  max-width: 60%;
+  height: auto;
+  overflow: hidden;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#heading {
+  padding-left: 2.5rem;
+  max-width: 30%;
+}
+
+.banner h3{
+  padding-bottom: 1rem;
+}
+
+
+/*Information Section*/
+
+.information {
+  max-width: 100%;
+  display: flex;
+  /*padding: 2rem 0 2rem 1.5rem;*/
+
+}
+
+.information-main {
+  /*padding-right: 1.5rem;*/
+  width: 60%;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.information-main .image-container {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+.information-main .image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.information-main .content h2 {
+  padding-bottom: 1.5rem;
+}
+
+#practicing-text {
+  padding-bottom: 1.5rem;
+}
+
+.small-text {
+  align-self: flex-end;
+  font-size: .8rem;
+}
+
+.information-side {
+  padding: 2rem 0;
+  max-width: 423px;
+  border-left: 1px solid gray;
+}
+
+.info {
+  max-height: 33%;
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+
+.info.third,
+.info.second {
+  padding-top: 1rem;
+}
+
+.info.third {
+  background-color: gray;
+}
+
+.info .image-container {
+  max-width: 35%;
+  height: auto;
+  overflow: hidden;
+}
+
+.info .image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info .content {
+  padding-left: 1rem;
+  max-width: 65%;
+}
+
+.info .content h3 {
+  padding-top: 1.5rem;
+}
+
+.info .content p {
+  padding: .5rem 0;
+}
+
+
+/*Courses*/
+
+.courses {
+  padding: 2rem 0 1rem 0;
+  background-color: gray;
+}
+
+.courses h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.courses-card {
+  max-width: 28%;
+  /*flex: 1 0 33%;*/
+  margin: 1rem;
+  background-color: white;
+}
+
+.courses-card .image-container {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.courses-card .image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.courses-description  {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.courses-description h4 {
+  padding: .5rem 0;
+}
+
+
+/*thesis*/
+
+.thesis h2 {
+  padding-top: 2rem;
+  text-align: center;
+}
+.thesis-content {
+  display: flex;
+}
+
+.main-thesis {
+  max-width: 60%;
+  padding: 2rem 1rem 2rem 1.5rem;
+}
+
+.main-thesis .image-container {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.main-thesis .image-container video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-thesis .content {
+  padding: 1.5rem 0 2rem 0;
+}
+
+.main-thesis .content h3 {
+  padding-bottom: 1.5rem;
+}
+
+.side-thesis {
+  padding-top: 2rem;
+  max-width: 423px;
+}
+
+.side-thesis-article {
+  max-height: 168px;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.side-thesis-article .image-container {
+  max-width: 35%;
+  height: auto;
+  overflow: hidden;
+}
+
+.side-thesis-article .image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.side-thesis-article .content {
+  padding-left: 1rem;
+}
+.side-thesis-article .content h3{
+  padding-bottom: 1rem;
+}
+
+.side-thesis-article.one {
+  background-color: gray;
+}
+
+
+
+/*footer*/
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 1.5rem 1.5rem 1.5rem;
+  border-top: 1px solid gray;
+}
+
+footer span {
+  font-size: .8rem;
+}
+
+#footer-links span {
+  padding: .1rem;
+}
+
+#footer-links a {
+  text-decoration: none;
+  color: gray;
+}
