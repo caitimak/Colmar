@@ -7,18 +7,28 @@
   <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
   <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
 </head>
+
+
 <body>
   <nav>
-    <div class="logo">
-      <img src="./resources/media/images/ic-logo.svg" alt="">
-      <span id="colmar">Colmar</span>
-      <span id="academy">Academy</span>
+    <div class="desktop-nav desktop">
+      <div class="logo">
+        <img src="./resources/media/images/ic-logo.svg" alt="">
+        <span id="colmar">Colmar</span>
+        <span id="academy">Academy</span>
+      </div>
+      <div class="links">
+        <a href="#"><span>On campus</span></a>
+        <a href="#"><span>Online</span></a>
+        <a href="#"><span>For companies</span></a>
+        <a href="#"><span>Sign in</span></a>
+      </div>
     </div>
-    <div class="links">
-      <a href="#"><span>On campus</span></a>
-      <a href="#"><span>Online</span></a>
-      <a href="#"><span>For companies</span></a>
-      <a href="#"><span>Sign in</span></a>
+    <div class="mobile-nav mobile">
+      <a href="#"><img src="./resources/media/images/ic-logo.svg" alt=""></a>
+      <a href="#"><img src="./resources/media/images/ic-on-campus.svg" alt=""></a>
+      <a href="#"><img src="./resources/media/images/ic-online.svg" alt=""></a>
+      <a href="#"><img src="./resources/media/images/ic-login.svg" alt=""></a>
     </div>
   </nav>
 
@@ -37,7 +47,7 @@
 
 
   <section class="information">
-    <div class="information-main">
+    <div class="information-main desktop">
       <div class="image-container">
         <img src="./resources/media/images/information-main.jpg" alt="">
       </div>
@@ -49,8 +59,11 @@
     </div>
     <div class="information-side">
       <div class="info first">
-        <div class="image-container">
+        <div class="image-container desktop">
           <img src="./resources/media/images/information-orientation.jpg" alt="">
+        </div>
+        <div class="image-container mobile">
+          <img src="./resources/media/images/information-orientation-mobile.jpg" alt="">
         </div>
         <div class="content">
           <h3>Orientation date</h3>
@@ -60,8 +73,11 @@
       </div>
 
       <div class="info second">
-        <div class="image-container">
+        <div class="image-container desktop">
           <img src="./resources/media/images/information-campus.jpg" alt="">
+        </div>
+        <div class="image-container mobile">
+          <img src="./resources/media/images/information-campus-mobile.jpg" alt="">
         </div>
         <div class="content">
           <h3>Our campus</h3>
@@ -71,8 +87,11 @@
       </div>
 
       <div class="info third">
-        <div class="image-container">
+        <div class="image-container desktop">
           <img src="./resources/media/images/information-guest-lecture.jpg" alt="">
+        </div>
+        <div class="image-container mobile">
+          <img src="./resources/media/images/information-guest-lecture-mobile.jpg" alt="">
         </div>
         <div class="content">
           <h3>Our guest lecture</h3>
@@ -88,63 +107,63 @@
     <h2>Start Learning</h2>
     <div class="courses-container">
       <div class="courses-card">
-        <div class="image-container">
+        <div class="image-container desktop">
           <img src="./resources/media/images/course-software.jpg" alt="">
         </div>
         <div class="courses-description">
           <h3>Software engineering</h3>
-          <h4>Courses</h4>
-          <p>Web Development, Mobile Development, iOT, APIs</p>
+          <h4 class="desktop">Courses</h4>
+          <p class="desktop">Web Development, Mobile Development, iOT, APIs</p>
         </div>
       </div>
       <div class="courses-card">
-        <div class="image-container">
+        <div class="image-container desktop">
           <img src="./resources/media/images/course-computer-art.jpg" alt="">
         </div>
         <div class="courses-description">
           <h3>Computer art</h3>
-          <h4>Courses</h4>
-          <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+          <h4 class="desktop">Courses</h4>
+          <p class="desktop">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
         </div>
       </div>
       <div class="courses-card">
-        <div class="image-container">
+        <div class="image-container desktop">
           <img src="./resources/media/images/course-design.jpg" alt="">
         </div>
         <div class="courses-description">
           <h3>Design</h3>
-          <h4>Courses</h4>
-          <p>User Experience Design, User Research, Visual Design</p>
+          <h4 class="desktop">Courses</h4>
+          <p class="desktop">User Experience Design, User Research, Visual Design</p>
         </div>
       </div>
       <div class="courses-card">
-        <div class="image-container">
+        <div class="image-container desktop">
           <img src="./resources/media/images/course-data.jpg" alt="">
         </div>
         <div class="courses-description">
           <h3>Data</h3>
-          <h4>Courses</h4>
-          <p>Data Science, Big Data, SQL, Data Visualization</p>
+          <h4 class="desktop">Courses</h4>
+          <p class="desktop">Data Science, Big Data, SQL, Data Visualization</p>
         </div>
       </div>
       <div class="courses-card">
-        <div class="image-container">
+        <div class="image-container desktop">
           <img src="./resources/media/images/course-business.jpg" alt="">
         </div>
         <div class="courses-description">
           <h3>Business</h3>
-          <h4>Courses</h4>
-          <p>Product Development, Business Development, Startup</p>
+          <h4 class="desktop">Courses</h4>
+          <p class="desktop">Product Development, Business Development, Startup</p>
         </div>
       </div>
       <div class="courses-card">
-        <div class="image-container">
+        <div class="image-container desktop">
           <img src="./resources/media/images/course-marketing.jpg" alt="">
         </div>
         <div class="courses-description">
           <h3>Marketing</h3>
-          <h4>Courses</h4>
-          <p>Analytics, Content Marketing, Mobile Marketing</p>
+          <h4 class="desktop">Courses</h4>
+          <p class="desktop">Analytics, Content Marketing, Mobile Marketing</p>
         </div>
       </div>
     </div>
@@ -161,13 +180,13 @@
           type ="video/mp4" controls width="1920" height="1080">
           </video>
         </div>
-        <div class="content">
+        <div class="content desktop">
           <h3>Reimagine Urban</h3>
           <p id=practicing-text>"Vestibulum dictum libero eget dolor blandit, vel rhoncus tortor accumsan. Nullam consequat sapien risus, tempor cursus tortor efficitur eget. Aliquam elit odio, finibus nec aliquet ac, ultrices quis ligula. Aliquam ac."</p>
         </div>
     </div>
 
-    <div class="side-thesis">
+    <div class="side-thesis desktop">
       <div class="side-thesis-article one">
         <div class="image-container">
           <img src="./resources/media/images/thesis-fisma.jpg" alt="">
@@ -193,7 +212,7 @@
 
 <footer>
   <span id="copyright">&copy; 2016 Colmar Academy. All rights reserved</span>
-  <div id="footer-links">
+  <div id="footer-links" class="desktop">
     <a href="#"><span>Terms</span></a>
     <a href="#"><span>Privacy</span></a>
   </div>
