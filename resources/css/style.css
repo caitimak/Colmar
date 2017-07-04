@@ -3,7 +3,9 @@
 }
 
 html {
+  font-family: 'Lato', 'sans-serif';
   font-size: 16px;
+  color: #3c3c3c;
 }
 
 section {
@@ -11,33 +13,49 @@ section {
 }
 
 h1 {
+  font-family: 'Zilla slab', 'serif';
   font-size: 3rem;
   padding-bottom: 1rem;
+  font-weight: 600;
 }
 h2 {
+  font-family: 'Zilla slab', 'serif';
   font-size: 2rem;
-}
-h3 {
-  font-size: 1.5rem;
+  color: #1b4b36;
   font-weight: bold;
 }
+h3 {
+  font-family: 'Zilla slab', 'serif';
+  font-size: 1.5rem;
+
+}
 h4 {
+  font-family: 'Zilla slab', 'serif';
   text-transform: uppercase;
+  color: #5c5c5c;
 }
 p {
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
+.dark {
+  color: white;
+}
+
 #button {
   display: block;
   width: 100%;
-  background-color: darkblue;
+  background-color: #1b4b36;
   color: white;
   text-align: center;
   height: 2rem;
   padding: .5rem;
+  border-radius: 3px;
+}
 
+#button:hover {
+  background-color: #34986d;
 }
 
 
@@ -57,6 +75,14 @@ nav {
   align-items: center;
 }
 
+#colmar, #academy {
+  font-family: 'Nunito', 'sans-serif';
+  text-transform: uppercase;
+}
+#academy {
+  color: #999;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -65,11 +91,11 @@ nav {
 
 .links span {
   padding-right: 1rem;
-
+  color: black;
 }
 
 .links span:hover {
-  color: gray;
+  color: #277252;
 }
 
 
@@ -93,14 +119,14 @@ nav {
   }
 
   .mobile-nav a:hover {
-    background-color: gray;
+    background-color: #277252;
   }
 }
 
 /*banner*/
 
 .banner {
-  background-color: gray;
+  background-color: #277252;
   padding: 2rem 1.5rem;
   display: flex;
   align-items: center;
@@ -132,6 +158,7 @@ nav {
   .banner {
     flex-wrap: wrap;
     padding: 0;
+    color: white;
   }
   .banner .image-container {
     max-width: 100%;
@@ -195,14 +222,14 @@ nav {
 .information-side {
   padding: 2rem 0;
   max-width: 423px;
-  border-left: 1px solid gray;
+  border-left: 1px solid #999;
 }
 
 .info {
   max-height: 33%;
   padding: 0 1rem 1rem 1rem;
   display: flex;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #999;
 }
 
 .info.third,
@@ -211,7 +238,7 @@ nav {
 }
 
 .info.third {
-  background-color: gray;
+  background-color: #277252;
 }
 
 .info .image-container {
@@ -268,7 +295,7 @@ nav {
 
 .courses {
   padding: 2rem 0 1rem 0;
-  background-color: gray;
+  background-color: #277252;
 }
 
 .courses h2 {
@@ -317,10 +344,11 @@ nav {
 @media only screen and (max-width: 480px) {
   .courses-card {
     min-width: 100%;
-    background-color: gray;
+    background-color: #277252;
+    color: white;
   }
   .courses-card:hover {
-    color: white;
+    background-color: #7f7f7f;
   }
   .courses {
     background-color: transparent;
@@ -397,7 +425,7 @@ nav {
 }
 
 .side-thesis-article.one {
-  background-color: gray;
+  background-color: #277252;
 }
 
 @media only screen and (max-width: 480px) {
@@ -414,7 +442,8 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: .5rem 1.5rem 1.5rem 1.5rem;
-  border-top: 1px solid gray;
+  border-top: 1px solid #999;
+  color: #999;
 }
 
 footer span {
@@ -427,7 +456,7 @@ footer span {
 
 #footer-links a {
   text-decoration: none;
-  color: gray;
+  color: #999;
 }
 
 @media only screen and (max-width: 480px) {
@@ -444,6 +473,9 @@ footer span {
 @media only screen and (max-width: 480px) {
   .desktop {
     display: none;
+  }
+  .information-side .dark, .courses .dark,.thesis .dark {
+    color: #3c3c3c;
   }
 }
 
